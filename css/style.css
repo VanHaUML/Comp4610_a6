@@ -1,5 +1,5 @@
 /*
-	 File: a6/css/style.css
+	 File: https://vanhauml.github.io/Comp4610_a6/css/style.css
 	 Assignment 6: Creating An Interactive Dynamic Table
 	 Course: COMP4610 GUI I
 	 Name: Van Ha, Senior UMass Lowell EE/CS Student
@@ -49,4 +49,19 @@ th {
     border: 2px solid black;
     padding: 5px;
     background-color: red;
+}
+
+tr:first-child th:first-child {
+    visibility: hidden;
+}
+
+tr td {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: white;
+    color: black;
 }
